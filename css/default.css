@@ -1,5 +1,89 @@
-﻿body {
-  /* Quite estas marcas de comentario para habilitar el desplazamiento y la aplicación de zoom.
-  touch-action: manipulation;
-  */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+body {
+	background: #FAFAFA;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+}
+ 
+.wrap {
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+ 
+.principal {
+	background: rgb(111, 54, 244);
+	border-top: 20px solid rgb(137, 47, 211);
+	color: #fff;
+	padding: 50px 0;
+	width: 100%;
+}
+ 
+.principal .formulario {
+	color: #212121;
+	text-align: center;
+}
+ 
+.principal .formulario input[type=text] {
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+ 
+.principal .formulario input[type=text].error {
+	border: 5px solid rgb(47, 77, 211);
+	color: rgb(68, 0, 255);
+}
+ 
+.principal .formulario .boton {
+	background: none;
+	border: 1px solid rgb(50, 47, 211);
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+}
+ 
+.principal .formulario .boton:hover {
+	border: 1px solid #fff;
+}
+ 
+/* - Tareas - */
+.tareas .lista {
+	list-style: none;
+	/* flex-box */
+	display: flex;
+	flex-direction: row;
+}
+ 
+.tareas .lista li {
+	border: 1px solid #B6B6B6;
+	margin-right: 20px;
+	padding: 0 10px;
+}
+
+.tareas .lista li::after {
+	content: '=>';
+	float: right;
+	margin-right: -30px;
+	position: relative;
+	bottom: 50%;
+}
+ 
+.tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+}
+ 
+.tareas .lista li a:hover {
+	text-decoration: line-through;
 }
